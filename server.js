@@ -6,4 +6,10 @@ import express from 'express'
 
 const app = express()
 
-app.listen(3000)
+app.get('/usuarios', (req, res) => {
+  res.send('Olá, rota acessada com sucesso!')
+})
+
+app.listen(3001);
+// req - Requisição
+// res - Resposta
