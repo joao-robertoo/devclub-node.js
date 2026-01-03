@@ -1,0 +1,20 @@
+{
+  "name": "conceitos-node",
+  "version": "1.0.0",
+  "description": "Esse projeto é um conceito básico para entender melhor o node",
+  "homepage": "https://github.com/joao-robertoo/devclub-node.js#readme",
+  "bugs": {
+    "url": "https://github.com/joao-robertoo/devclub-node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joao-robertoo/devclub-node.js.git"
+  },
+  "license": "ISC",
+  "author": "João Roberto",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
