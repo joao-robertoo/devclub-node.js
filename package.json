@@ -15,7 +15,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --wacth server.js",
     "prisma:push": "npx prisma@6.19 db push --schema prisma/schema.prisma --accept-data-loss",
     "prisma:generate": "npx prisma@6.19 generate"
   },
