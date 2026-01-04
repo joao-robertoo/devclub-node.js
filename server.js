@@ -7,16 +7,18 @@ import express from 'express'
 const app = express()
 app.use(express.json())
 
-app.get('/usuarios/:goiaba', (req, res) => {
+const users = []
+
+app.get('/usuarios', (req, res) => {
     console.log(req)
 
-  res.send('Olá, rota acessada com sucesso!')
+  res.status(200).json(users)
 })
 
 app.post('/usuarios', (req, res) => {
-    console.log(req)
+    users.push(req.body)
 
-  res.send('Usuário criado com sucesso!')
+  res.status(201).json({message: 'Usuário criado com sucesso!'})
 })
 
 app.listen(3001);

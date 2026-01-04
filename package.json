@@ -15,9 +15,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:push": "npx prisma@6.19 db push --schema prisma/schema.prisma --accept-data-loss",
+    "prisma:generate": "npx prisma@6.19 generate"
   },
   "dependencies": {
+    "@prisma/client": "6.19",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "prisma": "6.19"
   }
 }
